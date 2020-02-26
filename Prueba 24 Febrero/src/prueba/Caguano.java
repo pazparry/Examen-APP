@@ -1,34 +1,41 @@
 package prueba;
 
 public class Caguano extends Carro {
-	int alcanceTiro;
-	String colorConfeti = new String();
+	
+	private static int alcanceTiro = 10;
+	private static String colorConfeti = "café";
 	
 	
+
 	
-	public int getAlcanceTiro() {
+	public Caguano(int alcanceTiro, String colorConfeti) {
+		super();
+		Caguano.alcanceTiro = alcanceTiro;
+		Caguano.colorConfeti = colorConfeti;
+	}
+
+	public static int getAlcanceTiro() {
 		return alcanceTiro;
 	}
 
 	public void setAlcanceTiro(int alcanceTiro) {
-		this.alcanceTiro = alcanceTiro;
+		Caguano.alcanceTiro = alcanceTiro;
 	}
 
-	public String getColorConfeti() {
+	public static String getColorConfeti() {
 		return colorConfeti;
 	}
 
 	public void setColorConfeti(String colorConfeti) {
-		this.colorConfeti = colorConfeti;
+		Caguano.colorConfeti = colorConfeti;
 	}
 
-	public Caguano() {
-			
-	}
+	
 
 	@Override
 	public void mostrarDatos() {
-		// TODO Auto-generated method stub
+		System.out.println("El alcance de Tiro del Kaguano es de " + alcanceTiro);
+		System.out.println("El color del confeti del Kaguano es " + colorConfeti);
 		
 	}
 

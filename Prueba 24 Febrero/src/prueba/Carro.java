@@ -1,6 +1,6 @@
 
 package prueba;
-import java.time.LocalDate;
+//import java.time.LocalDate;
 
 abstract class Carro {
 	int dd=0;

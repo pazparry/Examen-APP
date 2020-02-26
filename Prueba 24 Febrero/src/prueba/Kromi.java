@@ -2,8 +2,8 @@ package prueba;
 //import java.time.LocalDate;
 
 public class Kromi extends Carro {
-
-	//LocalDate aFabricacion = new LocalDate(dd,mm,aa);
+	
+	int aFabricacion = 1980;
 	String marca;
 	
 	
