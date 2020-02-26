@@ -1,43 +1,41 @@
 package prueba;
-//import java.time.LocalDate;
+
+import java.time.LocalDate;
 
 public class Kromi extends Carro {
+	private static String marca="Meche Benz";
+	private static int fabricacion=2010;
 	
-	int aFabricacion = 1980;
-	String marca;
 	
 	
-	@Override
-	public String toString() {
-		return "Kromi [marca=" + marca + "]";
+	public Kromi(String marca, int fabricacion) {
+		super();
+		Kromi.marca = marca;
+		Kromi.fabricacion = fabricacion;
+		Carro.ingresoKromi();
 	}
-
-	public String getMarca() {
+	public static String getMarca() {
 		return marca;
 	}
-
 	public void setMarca(String marca) {
-		this.marca = marca;
+		Kromi.marca = marca;
 	}
-
-	public Kromi() {
-		
-	
+	public static int getFabricacion() {
+		return fabricacion;
 	}
-
+	public void setFabricacion(int fabricacion) {
+		Kromi.fabricacion = fabricacion;
+	}
 	@Override
 	public void mostrarDatos() {
 		// TODO Auto-generated method stub
-		
 	}
-
 	@Override
 	public void ubicacionEnTablero() {
 		// TODO Auto-generated method stub
-		
 	}
-
-public void mostrarMarca() {
-		
+	@Override
+	public String toString() {
+		return "Kromi [marca=" + marca + ", fabricacion=" + fabricacion + "]";
 	}
 }

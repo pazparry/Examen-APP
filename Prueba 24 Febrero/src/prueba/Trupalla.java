@@ -1,44 +1,34 @@
 package prueba;
-
+import java.util.Random;
 public class Trupalla extends Carro {
-	int nivelArmadura; //<=5
-	String nombreConductor;
 	
-	
+	static String nombreConductor = "El Chancho";
+	static Random nivel = new Random ();
+	static int nivelArmadura = nivel.nextInt(6);
 	public Trupalla() {	
 	}
-
 	@Override
 	public void mostrarDatos() {
 		// TODO Auto-generated method stub
-		
-	}
-
+		}
 	@Override
 	public void ubicacionEnTablero() {
 		// TODO Auto-generated method stub
-		
 	}
-
-	public int getNivelArmadura() {
+	public static int getNivelArmadura() {
 		return nivelArmadura;
 	}
-
 	public void setNivelArmadura(int nivelArmadura) {
-		this.nivelArmadura = nivelArmadura;
+		Trupalla.nivelArmadura = nivelArmadura;
 	}
-
-	public String getNombreConductor() {
+	public static String getNombreConductor() {
 		return nombreConductor;
 	}
-
 	public void setNombreConductor(String nombreConductor) {
-		this.nombreConductor = nombreConductor;
+		Trupalla.nombreConductor = nombreConductor;
 	}
-
 	@Override
 	public String toString() {
 		return "Trupalla [nivelArmadura=" + nivelArmadura + ", nombreConductor=" + nombreConductor + "]";
 	}
-
 }

@@ -6,7 +6,7 @@ public class Main {
 
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
-		
+		Tablero tableroInicial = new Tablero();
 		Scanner sn = new Scanner(System.in);
 		int opcion = 0;
 		boolean salir = false;
@@ -32,7 +32,7 @@ public class Main {
 	           switch (opcion){
 	   		case 1:
 	   			System.out.println("A Lanzar huevos!");
-	   			//System.out.println(Tablero.getlanzarHuevo());
+	   			tableroInicial.lanzarHuevo();
 	   			break;
 
 	   		case 2:
@@ -41,8 +41,20 @@ public class Main {
 	   			break;
 	   			
 	   		case 3:
+	   			System.out.println("===========KROMI==========");
+	   			System.out.println("El año de fabricación " + Kromi.getFabricacion());
+	   			System.out.println("La marca de las Kromis es " + Kromi.getMarca());
+	   			System.out.println("");
+	   			
+	   			System.out.println("===========CAGUANO==========");
 	   			System.out.println("El alcance del Caguano es de " + Caguano.getAlcanceTiro() + " metros");
 	   			System.out.println("El color del confeti del Caguano es " + Caguano.getColorConfeti());
+	   			System.out.println("");
+	   			
+	   			System.out.println("===========TRUPALLA==========");
+	   			System.out.println("El nivel de armadura es de " + Trupalla.getNivelArmadura());
+	   			System.out.println("El conductor de la Trupalla es " + Trupalla.getNombreConductor());
+	   			System.out.println("");
 	   			break;
 	   			
 	   		default:
@@ -58,5 +70,5 @@ public class Main {
 		sn.close();	
 	}
 
-}
+} 
 
