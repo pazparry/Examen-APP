@@ -1,3 +1,12 @@
+/*Prueba grupal JAVA
+ * 
+ * @Autores
+ * Alicia Villablanca
+ * Paz Parry
+ * Pedro Rodriguez
+ * 
+ *Fecha:27 de febrero 2020
+ */
 package prueba;
 import java.util.Scanner;
 
@@ -12,7 +21,7 @@ public class Main {
 		boolean salir = false; //para salir del menu
 		
 		
-		//Bienvenida al juego
+		//Imprimir en pantalla bienvenida al juego
 		System.out.println("Los PKS han llegado, prepara esos huevos!!");
 		System.out.println("Escoje en el menú la opción que deseas tomar,");
 		System.out.println ("¡cuidado!, podría llegarte confeti, alto en calorías, desde Caguano");
@@ -50,7 +59,7 @@ public class Main {
 	   			break;
 	   			
 	   		case 4:
-	   			
+	   			//Llama los métodos de la clase Kromi, para que los muestre en pantalla
 	   			System.out.println("===========KROMI==========");
 	   			System.out.println("El año de fabricación " + Kromi.getFabricacion());
 	   			System.out.println("Fecha de ingreso a la PKS " + Kromi.getIngresoKromi());
@@ -58,6 +67,7 @@ public class Main {
 	   			System.out.println("Cantidad de ocupantes " + Kromi.getCantOcupante());
 	   			System.out.println("");
 	   			
+	   			//Llama los métodos de la clase Caguano, para que los muestre en pantalla
 	   			System.out.println("===========CAGUANO==========");
 	   			System.out.println("Fecha de ingreso a la PKS " + Caguano.getIngresoCaguano());
 	   			System.out.println("Cantidad de ocupantes " + Caguano.getCantOcupanteCaguano());
@@ -65,6 +75,7 @@ public class Main {
 	   			System.out.println("El color del confeti del Caguano es " + Caguano.getColorConfeti());
 	   			System.out.println("");
 	   			
+	   			//Llama los métodos de la clase Trupalla, para que los muestre en pantalla
 	   			System.out.println("===========TRUPALLA==========");
 	   			System.out.println("El nivel de armadura es de " + Trupalla.getNivelArmadura());
 	   			System.out.println("Fecha de ingreso a la PKS " + Trupalla.ingresoTrupalla);
@@ -88,7 +99,7 @@ public class Main {
 		
 		
 		
-		sn.close();	
+		sn.close();	//Cierra el scanner
 	}
 
 	

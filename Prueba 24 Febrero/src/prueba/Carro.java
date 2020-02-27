@@ -4,7 +4,8 @@ package prueba;
 
 
 abstract class Carro {
-
+	
+	//Atributos de la clase padre
 	static String ingresoKromi="1969/4/2";
 	static String ingresoCaguano = "1973/6/13";
 	static String ingresoTrupalla = "1999/9/13";
@@ -12,7 +13,7 @@ abstract class Carro {
 	public static int cantOcupanteCaguano = 4;
 	public static int cantOcupanteTrupalla = 2;
 	
-	
+	//Métodos de la clase padre
 	public abstract void mostrarDatos();
 	public abstract void ubicacionEnTablero();
 	public abstract void cantOcupanteKromi();

@@ -2,6 +2,7 @@ package prueba;
 
 
 public class Kromi extends Carro {
+	//Atributos de la clase hija 
 	private static String marca="Meche Benz";
 	private static int fabricacion=2010;
 	private static String ingresoKromi = "1984/1/13";
@@ -11,9 +12,9 @@ public class Kromi extends Carro {
 	
 	public Kromi(String marca, int fabricacion, String ingresoKromi, int cantOcupante, String ingresoCaguano ) {
 		super();
-		Kromi.marca = marca;
+		Kromi.marca = marca; 
 		Kromi.fabricacion = fabricacion;
-		Carro.ingresoKromi = "1984/1/13";
+		Carro.ingresoKromi = "1984/1/13"; //atributos que proviene de la clase padre
 		Carro.cantOcupante = 7;
 		Carro.ingresoCaguano = "1973/6/13";
 	}
