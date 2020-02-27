@@ -1,24 +1,31 @@
 
 package prueba;
-import java.time.LocalDate;
+
 
 
 abstract class Carro {
-	int dd=0;
-	int mm=0;
-	int aa=0;
+
+	static String ingresoKromi="1969/4/2";
+	static String ingresoCaguano = "1973/6/13";
+	static String ingresoTrupalla = "1999/9/13";
+	public static int cantOcupante = 7;
+	public static int cantOcupanteCaguano = 4;
+	public static int cantOcupanteTrupalla = 2;
 	
-	int cantOcupante;
-	static LocalDate ingresoKromi = LocalDate.of(1984, 1, 13);
-	LocalDate ingresoCaguano = LocalDate.of(1973, 6, 13);
-	LocalDate ingresoTrupalla = LocalDate.of(1999, 9, 13);
 	
 	public abstract void mostrarDatos();
 	public abstract void ubicacionEnTablero();
-	protected static void ingresoKromi() {
+	public abstract void cantOcupanteKromi();
+	public static void ingresoKromi() {
 		// TODO Auto-generated method stub
 		
 	}
 	
+	public void IngresoKromi() {
+		// TODO Auto-generated method stub		
+	}
+	public void CantOcupanteKromi() {
+		// TODO Auto-generated method stub		
+	}
 	
 }

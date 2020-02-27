@@ -4,14 +4,16 @@ public class Caguano extends Carro {
 	
 	private static int alcanceTiro = 10;
 	private static String colorConfeti = "café";
-	
-	
+	private static int cantOcupanteCaguano = 4;
+	private static String ingresoCaguano = "1973/6/13";
 
 	
-	public Caguano(int alcanceTiro, String colorConfeti) {
+	public Caguano(int alcanceTiro, String colorConfeti, int cantOcupanteCaguano, String ingresoCaguano) {
 		super();
 		Caguano.alcanceTiro = alcanceTiro;
 		Caguano.colorConfeti = colorConfeti;
+		Carro.cantOcupanteCaguano = 4;
+		Carro.ingresoCaguano = "1973/6/13";
 	}
 
 	public static int getAlcanceTiro() {
@@ -57,6 +59,30 @@ public class Caguano extends Carro {
 	public String toString() {
 		return "Caguano [alcanceTiro=" + alcanceTiro + ", colorConfeti=" + colorConfeti + "]";
 	}
+
+	@Override
+	public void cantOcupanteKromi() {
+		// TODO Auto-generated method stub
+		
+	}
+
+	public static int getCantOcupanteCaguano() {
+		return cantOcupanteCaguano;
+	}
+
+	public static void setCantOcupanteCaguano(int cantOcupanteCaguano) {
+		Caguano.cantOcupanteCaguano = cantOcupanteCaguano;
+	}
+
+	public static String getIngresoCaguano() {
+		return ingresoCaguano;
+	}
+
+	public static void setIngresoCaguano(String ingresoCaguano) {
+		Caguano.ingresoCaguano = ingresoCaguano;
+	}
+
+	
 	
 	
 }

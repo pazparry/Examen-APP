@@ -1,19 +1,25 @@
 package prueba;
 
-import java.time.LocalDate;
 
 public class Kromi extends Carro {
 	private static String marca="Meche Benz";
 	private static int fabricacion=2010;
+	private static String ingresoKromi = "1984/1/13";
+	private static int cantOcupante = 7; 
+	private static String ingresoCaguano = "1973/6/13";
 	
 	
-	
-	public Kromi(String marca, int fabricacion) {
+	public Kromi(String marca, int fabricacion, String ingresoKromi, int cantOcupante, String ingresoCaguano ) {
 		super();
 		Kromi.marca = marca;
 		Kromi.fabricacion = fabricacion;
-		Carro.ingresoKromi();
+		Carro.ingresoKromi = "1984/1/13";
+		Carro.cantOcupante = 7;
+		Carro.ingresoCaguano = "1973/6/13";
 	}
+	
+	
+	
 	public static String getMarca() {
 		return marca;
 	}
@@ -26,6 +32,15 @@ public class Kromi extends Carro {
 	public void setFabricacion(int fabricacion) {
 		Kromi.fabricacion = fabricacion;
 	}
+	
+	public static String getIngresoKromi() {
+		return ingresoKromi;
+	}
+	
+	public static void setIngresoKromi(String ingresoKromi) {
+		Kromi.ingresoKromi = ingresoKromi;
+	}
+	
 	@Override
 	public void mostrarDatos() {
 		// TODO Auto-generated method stub
@@ -35,7 +50,50 @@ public class Kromi extends Carro {
 		// TODO Auto-generated method stub
 	}
 	@Override
+	public void IngresoKromi() {
+		// TODO Auto-generated method stub
+	}
+	
+
+
+
+	public static int getCantOcupante() {
+		return cantOcupante;
+	}
+
+
+
+	public static void setCantOcupante(int cantOcupante) {
+		Kromi.cantOcupante = cantOcupante;
+	}
+
+
+
+	@Override
+	public void cantOcupanteKromi() {
+		// TODO Auto-generated method stub
+		
+	}
+	
+	@Override
 	public String toString() {
 		return "Kromi [marca=" + marca + ", fabricacion=" + fabricacion + "]";
 	}
+
+
+
+	public static String getIngresoCaguano() {
+		return ingresoCaguano;
+	}
+
+
+
+	public static void setIngresoCaguano(String ingresoCaguano) {
+		Kromi.ingresoCaguano = ingresoCaguano;
+	}
+
+
+
+	
+	
 }
